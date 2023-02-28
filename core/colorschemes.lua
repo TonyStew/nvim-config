@@ -7,19 +7,19 @@ local M = {}
 -- Colorscheme to its directory name mapping, because colorscheme repo name is not necessarily
 -- the same as the colorscheme name itself.
 M.colorscheme2dir = {
-  onedark = "onedark.nvim",
-  edge = "edge",
-  sonokai = "sonokai",
-  gruvbox_material = "gruvbox-material",
-  nord = "nord.nvim",
-  everforest = "everforest",
-  nightfox = "nightfox.nvim",
-  kanagawa = "kanagawa.nvim",
+  --onedark = "onedark.nvim",
+  --edge = "edge",
+  --sonokai = "sonokai",
+  --gruvbox_material = "gruvbox-material",
+  --nord = "nord.nvim",
+  --everforest = "everforest",
+  --nightfox = "nightfox.nvim",
+  --kanagawa = "kanagawa.nvim",
   catppuccin = "catppuccin",
-  rose_pine = "rose-pine",
-  onedarkpro = "onedarkpro.nvim",
-  monokai = "monokai.nvim",
-  material = "material.nvim",
+  --rose_pine = "rose-pine",
+  --onedarkpro = "onedarkpro.nvim",
+  --monokai = "monokai.nvim",
+  --material = "material.nvim",
 }
 
 M.gruvbox8 = function()
@@ -87,7 +87,7 @@ end
 
 M.catppuccin = function()
   -- available option: latte, frappe, macchiato, mocha
-  vim.g.catppuccin_flavour = "frappe"
+  vim.g.catppuccin_flavour = "mocha"
 
   require("catppuccin").setup()
 
@@ -150,6 +150,6 @@ M.rand_colorscheme = function()
 end
 
 -- Load a random colorscheme
---M.rand_colorscheme()
-vim.cmd.colorscheme "catppuccin-mocha"
-
+M.rand_colorscheme()
+--vim.cmd.colorscheme "catppuccin-mocha"
+--vim.cmd([[colorscheme catppuccin]])
